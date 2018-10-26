@@ -13,12 +13,15 @@
 
 */
 
+/* Have article float left with the width of 384 pixels. */
 
 /* Article Styles */
 article {
     float: left;
     width: 384px;
 }
+
+/* Make the first paragraphs line in small caps and the first letter in the paragraphs size to 4em and change the font to serif with it floating left. Also, make the line height 0.8em and both margin right and margin bottom to 5 pixels. */
 
 /* First Line and Drop Cap Styles */
 article p:first-of-type:first-line {
@@ -35,20 +38,75 @@ article p:first-of-type:first-letter {
     margin-bottom: 5px;
 }
 
+/* Have the aside element float left with the width of 768 pixels. */
+
 /* Aside Styles */
 aside {
     width: 768px;
     float: left;
 }
 
+/* Position the battle map that is the id of the div as relative with the width of 688 pixels. make margin top and bottom 20 pixels and make margin right and left to auto. Make the actual image with the id of mapImage display as a block and have width be 100%. */
+
 /* Map Styles */
+div#battleMap {
+    position: relative;
+    width: 688px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
+div img#mapImage {
+    display: block;
+    width: 100%;
+}
 
-
+/* Have all the hyper links with the class of battleMarkers position absolute. Then, have all the hyper links with the id's ranging from marker1-6 positions set to what was given with the measurement of pixels.  */
 
 /* Interactive Map Styles */
+a.battleMarkers {
+    position: absolute;
+}
 
+a#marker1 {
+    top: 220px;
+    left: 340px;
+}
 
+a#marker2 {
+    top: 194px;
+    left: 358px;
+}
 
+a#marker3 {
+    top: 202px;
+    left: 400px;
+}
+
+a#marker4 {
+    top: 217px;
+    left: 452px;
+}
+
+a#marker5 {
+    top: 229px;
+    left: 498px;
+}
+
+a#marker6 {
+    top: 246px;
+    left: 544px;
+}
+
+/* Have the div with the class of mapInfo display as none. Use the element that was shown in instructions and have them display as a block. */
 
 /* Map Information Styles */
+div.mapInfo {
+    display: none;
+}
+
+a.battleMarkers:hover+div.mapInfo {
+    display: block;
+}
